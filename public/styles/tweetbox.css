@@ -1,8 +1,31 @@
 #container .new-tweet{
     position: relative;
     top: 200px;
-    border: 2px solid #eee;
+    border: 2px solid #dddddd;
+    background-color:#eee;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
   }
   .new-tweet #composeTweet{
     border-bottom: 2px solid black
+  }
+
+  .new-tweet textarea{
+      width: 100%;
+  }
+
+  main section form span{
+      float: right;
+  }
+
+  .new-tweet textarea{
+      padding-top: 5px;
+      padding-left: 5px;
+  }
+
+  .new-tweet{
+      margin-left: 2em;
+      margin-right: 2em;
+      padding-bottom: 0.5em;
   }
