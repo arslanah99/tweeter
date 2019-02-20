@@ -27,6 +27,7 @@ body {
   /* position: fixed; */
   background-color: white;
   min-width: 450px;
+  max-width: 450px;
   width: 50%;
   min-height: 110vh;
   margin: 0 auto;

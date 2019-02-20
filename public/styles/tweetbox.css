@@ -1,12 +1,21 @@
 #container .new-tweet{
     position: relative;
-    top: 200px;
     border: 2px solid #dddddd;
     background-color:#eee;
     border-radius: 10px;
     padding-left: 1em;
     padding-right: 1em;
   }
+
+#container{
+    padding-top: 20px;
+
+}
+
+  .new-tweet{
+      margin-top:80px;
+  }
+
   .new-tweet #composeTweet{
     border-bottom: 2px solid black
   }

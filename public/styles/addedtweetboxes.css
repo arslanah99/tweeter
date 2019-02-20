@@ -1,0 +1,80 @@
+main article {
+  width: 400px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 0px;
+}
+
+.tweettime{
+  position: relative;
+  padding-bottom: 0px;
+
+}
+
+.toparea h1{
+  position: relative;
+  bottom: 65px;
+  left: 70px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.toparea h4{
+  position: relative;
+  bottom: 114px;
+  left: 310px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 25px;
+}
+
+.tweetarea h3{
+  position: relative;
+  bottom: 50px;
+  border-top-width: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  top: auto;
+  margin-left: 10px;
+}
+
+
+.tweettime h5{
+  position: relative;
+  bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #dddddd;
+  padding-left: 10px;
+}
+
+.topheader{
+  position: relative;
+  background-color: #eee;
+  width:390px;
+}
+
+.toparea img{
+  padding-left: 0;
+  border-left-width: 10px;
+  margin-left: 10px;
+  margin-top:10px;
+  border-radius: 6px;
+}
+
+section .toparea{
+  width: 450px;
+}
+
+.topheader{
+  width: 396px;
+  height: 75px;
+  margin-bottom: 75px;
+  margin-top: 0px;
+  border-bottom-width: 50px;
+  padding-bottom: 0px;
+  border-radius: 6px;
+}
