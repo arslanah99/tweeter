@@ -1,9 +1,9 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  $("textarea").keydown(function() {
+  $("textarea").keyup(function() {
     var inputBoxValuesLength = $("textarea").val().length;
     var hardCodedCounterValue = 140;
-    var subtractInputAndHardCodeValues = hardCodedCounterValue - inputBoxValuesLength;
+    var subtractInputAndHardCodeValues = hardCodedCounterValue - (inputBoxValuesLength);
     $(this)
       .siblings(".counter")
       .text(subtractInputAndHardCodeValues);
