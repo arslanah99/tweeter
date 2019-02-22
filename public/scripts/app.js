@@ -13,7 +13,9 @@ $(document).ready(function() {
     $("#TweetBox").focus();
   });
   function loadTweets() {
+    console.log('Loading tweets');
     $.ajax("/tweets", { method: "GET" }).then(function(tweets) {
+      console.log(tweets);
       renderTweets(tweets);
     });
   }
@@ -25,13 +27,17 @@ $(document).ready(function() {
   }
   $("form").submit(function(event) {
     event.preventDefault();
-    var contentLength = $("#TweetBox").val();
-    if (!contentLength) {
-      console.log(contentLength);
-      alert("Not Allowed you must enter valid string");
-    } else if (contentLength.length >= 140) {
-      alert("Too many characters");
+    var contentValue = $("#TweetBox").val();
+    if (!contentValue) {
+      console.log(contentValue);
+      $('.emptystring').show()
+      // alert("Not Allowed you must enter valid string");
+    } else if (contentValue.length >= 140) {
+      $('.toomanystrings').show()
     } else {
+      $('.toomanystrings').hide()
+      $('.emptystring').hide()
+      
       $.ajax("/tweets", {
         method: "POST",
         data: $("form").serialize(),
