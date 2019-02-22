@@ -7,66 +7,62 @@
   /* <script src="https://code.jquery.com/jquery-1.10.2.js"></script> */
 }
 
-//attach the submit button to a post request
-//console log 
 
-// $(btn).click(function(){
-//   $.post('/tweets', function(data){
-//     $('#container').text(data);
-// })
-
-var btn = document.getElementById('btn')
 
 
 $(document).ready(function() {
 
 
-// $('form').submit(function( event ){
-//   event.preventDefault()
-//   var textData = ($(this).serialize())
-//   $.post('/tweets', textData)
-//   .done(function(data){
-
-//   })
-// })
-
-$('form').submit(function(event){
-  event.preventDefault()
-  $.ajax('/tweets', {
-    method: 'POST',
-    data: $('form').serialize()
-  })
-  console.log($.ajax)
-})
 
 
-// $(function loadTweets(){
-//   $('form').submit(function(){
-//     $.ajax('/tweets', {method: 'GET'})
-//   })
-// })
 
 
-$.getJSON('/tweets', function(data){
-  $.each( data, function(key, val){
-    renderTweets([val]);
-  })
-})
 
-  const data = [
-    
-    ];
+function loadTweets(){
+  $.ajax('/tweets', {method: 'GET'})
+    .then(function(tweets){
+      renderTweets(tweets)
+    })
+}
+
+
+
 
   function renderTweets(tweets) {
-    //we get the tweet data and want to loop through the data
     tweets.forEach(function(tweet) {
       var tweetElement = createTweetElement(tweet);
       $("#texts").prepend(tweetElement);
     });
   }
 
+
+  $('form').submit(function(event){
+    event.preventDefault()
+    var contentLength = $('#TweetBox').val();
+    var counting = $('.counter').val();
+    console.log(contentLength.length)
+  
+    if(!contentLength){
+      console.log(contentLength)
+      alert('Not Allowed you must enter valid string')
+    } else if(contentLength.length >= 140){
+      alert('Too many characters')
+    } else {
+      $.ajax('/tweets', {
+        method: 'POST',
+        data: $('form').serialize(),
+        complete: loadTweets
+        // error: errorChecker
+  
+      })
+      $('#TweetBox').val('')
+  
+    }
+    
+  
+  })
+
   function createTweetElement(tweetObj) {
-    console.log("createTweetELement", tweetObj);
     return $.parseHTML(`
         <article>
             <header class='topheader'>
@@ -89,6 +85,15 @@ $.getJSON('/tweets', function(data){
         </article>`
     );
   }
-  renderTweets(data);
+  loadTweets()
+
+
+  // $('button>composebutton').click(function(){
+  //   $('article').toggle();
+  // })
+
+
+
+
 });
 

@@ -11,6 +11,7 @@ $(document).ready(function() {
       $(this)
         .siblings(".counter")
         .css({ color: "red" });
+        $(this)
     } else{
         $(this)
         .siblings(".counter")

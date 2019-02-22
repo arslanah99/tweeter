@@ -5,6 +5,7 @@ main article {
   margin: 25px;
   padding: 0px;
   opacity: 0.6;
+  word-wrap: break-word;
 }
 
 .tweettime{
