@@ -8,6 +8,11 @@
     width: 100%;
     padding-left: 2em;
     padding-right: 2em;
+    z-index: 1;
+  }
+
+  #container{
+      padding-top: 120px;
   }
 
 #nav-bar .logo{

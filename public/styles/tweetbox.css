@@ -1,16 +1,16 @@
 #container .new-tweet{
-    position: relative;
+    /* position: relative; */
     border: 2px solid #dddddd;
     background-color:#eee;
     border-radius: 10px;
     padding-left: 1em;
     padding-right: 1em;
+    margin-top: 0px;
+    /* top: 100px; */
+    /* display:block; */
   }
 
-#container{
-    padding-top: 20px;
 
-}
 
   .new-tweet{
       margin-top:80px;
