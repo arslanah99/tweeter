@@ -11,8 +11,8 @@ main article {
 
 .tweettime{
   position: relative;
-  padding-bottom: 0px;
-
+  padding-bottom: 0px;  
+  height: 20px;
 }
 
 .toparea h1{
@@ -84,4 +84,25 @@ section .toparea{
 
 article:hover{
   opacity:1;
+}
+
+.fa-flag{
+  position: relative;
+  left: 370px;
+  bottom: 35px;
+  color: #3dffce;
+}
+
+.fa-retweet{
+  position: relative;
+  left: 320px;
+  bottom: 35px;
+  color: #3dffce;
+}
+
+.fa-heart{
+  position: relative;
+  left: 270px;
+  bottom: 35px;
+  color: #3dffce;
 }

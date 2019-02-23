@@ -5,11 +5,15 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
+
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
@@ -28,7 +32,9 @@
     <script
       type="text/javascript"
       src="/scripts/composer-char-counter.js"
+      
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 
     
   </head>
@@ -54,12 +60,14 @@
             name="text"
             placeholder="What are you humming about?"
             id='TweetBox'
+            autofocus
           ></textarea>
           <input type="submit" value="Tweet" id=btn/>
           <span class="counter">140</span>
         </form>
       </section>
       <section id="texts">
+
 
       </section>
 

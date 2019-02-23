@@ -20,6 +20,7 @@ $(document).ready(function() {
     });
   }
   function renderTweets(tweets) {
+    $('#texts').empty();
     tweets.forEach(function(tweet) {
       var tweetElement = createTweetElement(tweet);
       $("#texts").prepend(tweetElement);
@@ -64,7 +65,10 @@ $(document).ready(function() {
             </section>
             <footer>
                 <section class='tweettime'>
-                    <h5>${tweetObj.created_at}</h5>
+                    <h5>Ten Days Ago</h5>
+                    <i class="fas fa-flag"></i>
+                    <i class="fas fa-retweet"></i>
+                    <i class="fas fa-heart"></i>
                 </section>
             </footer>
         </article>`);

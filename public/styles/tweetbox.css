@@ -1,13 +1,10 @@
 #container .new-tweet{
-    /* position: relative; */
     border: 2px solid #dddddd;
     background-color:#eee;
     border-radius: 10px;
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 0px;
-    /* top: 100px; */
-    /* display:block; */
   }
 
 
