@@ -32,9 +32,11 @@ $(document).ready(function() {
     if (!contentValue) {
       console.log(contentValue);
       $('.emptystring').show()
+      $('.toomanystrings').hide()
       // alert("Not Allowed you must enter valid string");
     } else if (contentValue.length >= 140) {
       $('.toomanystrings').show()
+      $('.emptystring').hide()
     } else {
       $('.toomanystrings').hide()
       $('.emptystring').hide()

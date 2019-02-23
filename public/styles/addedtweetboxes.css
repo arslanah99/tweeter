@@ -21,6 +21,7 @@ main article {
   left: 70px;
   margin-top: 0px;
   margin-left: 10px;
+  
 }
 
 .toparea h4{
@@ -30,6 +31,7 @@ main article {
   padding-left: 15px;
   padding-bottom: 0px;
   margin-bottom: 25px;
+  max-width: 75px;
 }
 
 .tweetarea h3{
@@ -41,6 +43,7 @@ main article {
   margin-bottom: 0px;
   top: auto;
   margin-left: 10px;
+  
 }
 
 
@@ -52,6 +55,7 @@ main article {
   padding-top: 10px;
   border-top: 1px solid #dddddd;
   padding-left: 10px;
+  
 }
 
 .topheader{
