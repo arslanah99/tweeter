@@ -35,7 +35,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
       console.log(tweet);
     }
 
-    db.close();
+    // db.close();
   });
 
 });
