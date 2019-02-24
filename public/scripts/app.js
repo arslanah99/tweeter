@@ -57,7 +57,7 @@ $(document).ready(function() {
   //Template where the tweet is created
   function createTweetElement(tweetObj) {
     return $.parseHTML(`
-        <article>
+        <article class="new-tweet-box">
             <header class='topheader'>
                 <section class='toparea'>
                     <img src='${
@@ -74,8 +74,8 @@ $(document).ready(function() {
                 <section class='tweettime'>
                     <h5>Ten Days Ago</h5>
                     <i class="fas fa-flag"></i>
-                    <i class="fas fa-retweet"></i>
-                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-retweet"> </i>
+                    <i class="fas fa-heart"> </i>
                 </section>
             </footer>
         </article>`);

@@ -81,9 +81,6 @@ section .toparea {
   border-radius: 6px;
 }
 
-article:hover {
-  opacity: 1;
-}
 
 .fa-flag {
   position: relative;
@@ -91,6 +88,7 @@ article:hover {
   bottom: 35px;
   color: #3dffce;
 }
+
 
 .fa-retweet {
   position: relative;
@@ -104,4 +102,16 @@ article:hover {
   left: 270px;
   bottom: 35px;
   color: #3dffce;
+}
+
+i {
+  opacity: 0;
+}
+.new-tweet-box:hover .tweettime i {
+  opacity: 1;
+}
+
+
+.new-tweet-box:hover {
+  opacity: 1;
 }
