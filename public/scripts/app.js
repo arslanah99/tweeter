@@ -53,7 +53,6 @@ $(document).ready(function() {
     }
   });
 
-
   //Template where the tweet is created
   function createTweetElement(tweetObj) {
     return $.parseHTML(`
