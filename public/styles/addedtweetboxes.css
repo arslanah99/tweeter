@@ -6,25 +6,23 @@ main article {
   padding: 0px;
   opacity: 0.6;
   word-wrap: break-word;
-  /* margin-top: 150px; */
 }
 
-.tweettime{
+.tweettime {
   position: relative;
-  padding-bottom: 0px;  
+  padding-bottom: 0px;
   height: 20px;
 }
 
-.toparea h1{
+.toparea h1 {
   position: relative;
   bottom: 65px;
   left: 70px;
   margin-top: 0px;
   margin-left: 10px;
-  
 }
 
-.toparea h4{
+.toparea h4 {
   position: relative;
   bottom: 114px;
   left: 310px;
@@ -34,7 +32,7 @@ main article {
   max-width: 75px;
 }
 
-.tweetarea h3{
+.tweetarea h3 {
   position: relative;
   bottom: 50px;
   border-top-width: 20px;
@@ -43,11 +41,9 @@ main article {
   margin-bottom: 0px;
   top: auto;
   margin-left: 10px;
-  
 }
 
-
-.tweettime h5{
+.tweettime h5 {
   position: relative;
   bottom: 20px;
   margin-bottom: 0px;
@@ -55,28 +51,27 @@ main article {
   padding-top: 10px;
   border-top: 1px solid #dddddd;
   padding-left: 10px;
-  
 }
 
-.topheader{
+.topheader {
   position: relative;
   background-color: #eee;
-  width:390px;
+  width: 390px;
 }
 
-.toparea img{
+.toparea img {
   padding-left: 0;
   border-left-width: 10px;
   margin-left: 10px;
-  margin-top:10px;
+  margin-top: 10px;
   border-radius: 6px;
 }
 
-section .toparea{
+section .toparea {
   width: 450px;
 }
 
-.topheader{
+.topheader {
   width: 396px;
   height: 75px;
   margin-bottom: 75px;
@@ -86,25 +81,25 @@ section .toparea{
   border-radius: 6px;
 }
 
-article:hover{
-  opacity:1;
+article:hover {
+  opacity: 1;
 }
 
-.fa-flag{
+.fa-flag {
   position: relative;
   left: 370px;
   bottom: 35px;
   color: #3dffce;
 }
 
-.fa-retweet{
+.fa-retweet {
   position: relative;
   left: 320px;
   bottom: 35px;
   color: #3dffce;
 }
 
-.fa-heart{
+.fa-heart {
   position: relative;
   left: 270px;
   bottom: 35px;

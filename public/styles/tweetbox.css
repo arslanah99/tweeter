@@ -1,37 +1,36 @@
-#container .new-tweet{
-    border: 2px solid #dddddd;
-    background-color:#eee;
-    border-radius: 10px;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 0px;
-  }
+#container .new-tweet {
+  border: 2px solid #dddddd;
+  background-color: #eee;
+  border-radius: 10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0px;
+  display: none;
+}
 
+.new-tweet {
+  margin-top: 80px;
+}
 
+.new-tweet #composeTweet {
+  border-bottom: 2px solid black;
+}
 
-  .new-tweet{
-      margin-top:80px;
-  }
+.new-tweet textarea {
+  width: 100%;
+}
 
-  .new-tweet #composeTweet{
-    border-bottom: 2px solid black
-  }
+main section form span {
+  float: right;
+}
 
-  .new-tweet textarea{
-      width: 100%;
-  }
+.new-tweet textarea {
+  padding-top: 5px;
+  padding-left: 5px;
+}
 
-  main section form span{
-      float: right;
-  }
-
-  .new-tweet textarea{
-      padding-top: 5px;
-      padding-left: 5px;
-  }
-
-  .new-tweet{
-      margin-left: 2em;
-      margin-right: 2em;
-      padding-bottom: 0.5em;
-  }
+.new-tweet {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 0.5em;
+}

@@ -1,45 +1,43 @@
-
-#nav-bar{
-    background-color: #00a087;
-    color: #e8fdff;
-    position: fixed;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
-    z-index: 1;
-  }
-
-  #container{
-      padding-top: 120px;
-  }
-
-#nav-bar .logo{
-    width: 80px;
-    height: 80px
-}
-  
-#nav-bar  .header{
-    position: relative;
-    bottom: 30px;
-    font-size: 32px;
-    margin-left: 10px;
-}
-  
-
-.composebutton{
-    float: right;
-    margin-top: 5px;
-    height: 65px;
-    width: 120px;
-    background-color: white;
-    border-radius: 6px;
-    color: #00a087;
-    font-size: 20px;
-    border-color: black;
+#nav-bar {
+  background-color: #00a087;
+  color: #e8fdff;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 1;
 }
 
-.composebutton:active{
-    background: gray;
+#container {
+  padding-top: 120px;
+}
+
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+}
+
+#nav-bar .header {
+  position: relative;
+  bottom: 30px;
+  font-size: 32px;
+  margin-left: 10px;
+}
+
+.composebutton {
+  float: right;
+  margin-top: 5px;
+  height: 65px;
+  width: 120px;
+  background-color: white;
+  border-radius: 6px;
+  color: #00a087;
+  font-size: 20px;
+  border-color: black;
+}
+
+.composebutton:active {
+  background: gray;
 }

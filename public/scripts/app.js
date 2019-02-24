@@ -3,44 +3,47 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-{
-  /* <script src="https://code.jquery.com/jquery-1.10.2.js"></script> */
-}
 
+//Making the compose button work and toggle
 $(document).ready(function() {
   $(".composebutton").click(function() {
     $(".new-tweet").slideToggle("slow");
     $("#TweetBox").focus();
   });
+
+  //Loads the tweets from render tweets
   function loadTweets() {
-    console.log('Loading tweets');
+    console.log("Loading tweets");
     $.ajax("/tweets", { method: "GET" }).then(function(tweets) {
       console.log(tweets);
       renderTweets(tweets);
     });
   }
+
+  //renders the tweets from the createTweetElement template
   function renderTweets(tweets) {
-    $('#texts').empty();
+    $("#texts").empty();
     tweets.forEach(function(tweet) {
       var tweetElement = createTweetElement(tweet);
       $("#texts").prepend(tweetElement);
     });
   }
+
+  //Handles errors and submit form
   $("form").submit(function(event) {
     event.preventDefault();
     var contentValue = $("#TweetBox").val();
     if (!contentValue) {
       console.log(contentValue);
-      $('.emptystring').show()
-      $('.toomanystrings').hide()
-      // alert("Not Allowed you must enter valid string");
+      $(".emptystring").show();
+      $(".toomanystrings").hide();
     } else if (contentValue.length >= 140) {
-      $('.toomanystrings').show()
-      $('.emptystring').hide()
+      $(".toomanystrings").show();
+      $(".emptystring").hide();
     } else {
-      $('.toomanystrings').hide()
-      $('.emptystring').hide()
-      
+      $(".toomanystrings").hide();
+      $(".emptystring").hide();
+
       $.ajax("/tweets", {
         method: "POST",
         data: $("form").serialize(),
@@ -50,6 +53,8 @@ $(document).ready(function() {
     }
   });
 
+
+  //Template where the tweet is created
   function createTweetElement(tweetObj) {
     return $.parseHTML(`
         <article>
