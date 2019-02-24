@@ -24,5 +24,5 @@ This repository is the starter code for the project: Students will fork and clon
 - nodemon
 
 ## Screenshots
-!['Screenshot of tweet compose box'](https://github.com/arslanah99/tweeter/blob/master/docs/tweet-box.png)
-!['Screenshot of tweets'](https://github.com/arslanah99/tweeter/blob/master/docs/tweets.png)
+!['Screenshot of tweet compose box'](https://github.com/arslanah99/tweeter/blob/master/docs/tweet-box-without-tweeter-container.png)
+!['Screenshot of tweets'](https://github.com/arslanah99/tweeter/blob/master/docs/tweet-boxs.png)
